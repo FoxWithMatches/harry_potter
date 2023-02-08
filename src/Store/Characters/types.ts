@@ -1,0 +1,21 @@
+export type OneCharacterType = {
+  id: string;
+  name: string;
+  alternate_names: [];
+  species: string;
+  gender: string;
+  house: string;
+  dateOfBirth: string;
+  yearOfBirth: number;
+  wizard: boolean;
+  ancestry: string;
+  eyeColour: string;
+  hairColour: string;
+  patronus: string;
+  hogwartsStudent: boolean;
+  hogwartsStaff: boolean;
+  actor: string;
+  alternate_actors: [];
+  alive: true;
+  image: string;
+};
