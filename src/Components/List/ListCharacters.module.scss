@@ -1,0 +1,23 @@
+.image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: url(../../assets/gryffindor.png);
+
+}
+
+.title {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: -30px 0 0 50px;
+    color: white;
+}
+
+.container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}

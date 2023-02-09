@@ -1,7 +1,6 @@
 import { EmptyHouse } from 'Components/Common/EmptyHouse';
 import { routes } from 'Helpers/Constants/routes';
 import React from 'react';
-
 import bckg from '../../../assets/gryffindor.png';
 
 export const GriffindorHouse = () => {

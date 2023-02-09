@@ -10,5 +10,6 @@ export const routes = {
   gryffindor: '/characters/house/gryffindor',
   ravenclaw: '/characters/house/ravenclaw',
   slytherin: '/characters/house/slytherin',
-  hufflepuff: '/characters/house/Hufflepuff'
+  hufflepuff: '/characters/house/Hufflepuff',
+  oneCharacter: '/characters/:Id'
 };

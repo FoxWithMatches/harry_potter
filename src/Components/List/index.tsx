@@ -1,6 +1,9 @@
 import React from 'react';
 import { type OneCharacterType } from 'Store/Characters/types';
-import { OneCharacter } from './OneCharacter';
+import { ListItem } from './ListItem';
+import style from './ListCharacters.module.scss';
+import { routes } from 'Helpers/Constants/routes';
+import { Arrow } from '../../Components/Common/Arrow';
 
 type CharactersListPropsType = {
   charactersData: OneCharacterType[];
@@ -10,10 +13,12 @@ export const ListCharacters = ({ charactersData }: CharactersListPropsType) => {
   console.log(charactersData, 'charactersData');
 
   return (
-    <main>
-      <div>
+    <main className={style.image}>
+      <Arrow to={routes.houses} title={'Back'} />
+      <h1 className={style.title}>Gryffindor</h1>
+      <div className={style.container}>
         {charactersData.map((el) => (
-          <OneCharacter key={el.id} name={el.name} house={el.house} />
+          <ListItem key={el.id} name={el.name} image={el.image} id={el.id}/>
         ))}
       </div>
     </main>
