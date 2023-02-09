@@ -1,10 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { routes } from '../../../Helpers/Constants/routes';
 import style from './Button.module.scss';
 
-export const Button = () => {
+type ButtonProps = {
+  title: string;
+  type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type'];
+  onClick?: () => void;
+  color?: string;
+  textColor?: string;
+};
+
+export const Button: React.FC<ButtonProps> = ({ title, onClick, color = '', textColor = '' }) => {
   return (
-    <Link to={routes.characters} className={style.button}>Look</Link>
+    <button
+      className={style.button}
+      onClick={onClick}
+      style={{ backgroundColor: color, color: textColor }}
+    >
+      {title}
+    </button>
   );
 };

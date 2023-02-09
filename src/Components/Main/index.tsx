@@ -1,13 +1,15 @@
+import { Button } from 'Components/Common/Button';
 import React from 'react';
-import bckg from '../../assets/bckg.png';
-import { Button } from '../Common/Button';
+import { Link } from 'react-router-dom';
+import { routes } from '../../Helpers/Constants/routes';
 import style from './Main.module.scss';
 
 export const MainContent = () => {
   return (
-    <div>
-      <img className={style.bckg} src={bckg} alt="background image" />
-      <Button />
+    <div className={style.main}>
+      <Link to={routes.houses} className={style.main_link}>
+        <Button title={'Go'} color={'#F4CC4F'} textColor={'black'}/>
+      </Link>
     </div>
   );
 };

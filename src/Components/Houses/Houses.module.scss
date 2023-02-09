@@ -1,0 +1,15 @@
+.houses {
+    background: url(../../assets/bckg2.png);
+    display: block;
+    max-width: 100%;
+    height: 100vh;
+
+    &_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 100px 0;
+    }
+}
